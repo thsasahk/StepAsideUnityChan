@@ -242,6 +242,7 @@ GameObject:
   - component: {fileID: 2774450070602974388}
   - component: {fileID: 2960324297618892822}
   - component: {fileID: 231348307941143161}
+  - component: {fileID: 5093848494631377997}
   m_Layer: 0
   m_Name: coinprefab
   m_TagString: CoinTag
@@ -289,5 +290,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6cce9b717f5e6545a61a369198c0dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5093848494631377997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8709117513884763490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99762ab8f4770554e832f1b9e1097483, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

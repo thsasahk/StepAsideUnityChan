@@ -4,12 +4,18 @@ using UnityEngine;
 
 public class DestroyController : MonoBehaviour
 {
-    void OnTriggerStay(Collider other)
+    private GameObject unityChan;
+
+    void Start()
     {
-        //オブジェクトの破棄
-        if(other.gameObject.tag=="CarTag"||other.gameObject.tag=="CoinTag"||other.gameObject.tag=="TrafficConeTag")
+        this.unityChan=GameObject.Find("unitychan");
+    }
+
+    void Update()
+    {
+        if(transform.position.z<this.unityChan.transform.position.z-10)
         {
-            Destroy(other.gameObject);
+            Destroy(gameObject);
         }
     }
 }

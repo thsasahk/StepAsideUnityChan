@@ -89,7 +89,6 @@ public class UnityChanController : MonoBehaviour
     //トリガーモードで他のオブジェクトと触れた時の処理
     void OnTriggerEnter(Collider other)
     {
-        return;
         //障害物に衝突した場合
         if(other.gameObject.tag=="CarTag"||other.gameObject.tag=="TrafficConeTag")
         {
@@ -127,7 +126,7 @@ public class UnityChanController : MonoBehaviour
     {
         if(this.transform.position.y<0.5f)
         {
-            this.myAnimator.SetBool("Jump",false);
+            this.myAnimator.SetBool("Jump",true);
             this.myRigidbody.AddForce(this.transform.up*this.upForce);
         }
     }
